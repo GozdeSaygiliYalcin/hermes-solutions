@@ -1,0 +1,144 @@
+/* CSS Reset Ayarları*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/* Image Ayarları*/
+
+img {
+    width: 100%;
+}
+
+
+/* Navbar Ayarları*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 0 30px;
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 25;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: var(--light-color);
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-transform: capitalize;
+    justify-content: space-around;
+}
+
+.navbar a:hover {
+    border-bottom: var(--primary-color) 2px solid;
+}
+
+.navbar .logo {
+    font-weight: 700;
+}
+
+
+/*  header ayarları */
+
+.hero {
+    height: 100vh;
+    background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+    position: relative;
+    color: var(--light-color);
+}
+
+.hero .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.hero .content p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+
+/* Icons */
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.icons i {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 15px;
+    width: 4.5rem;
+    height: 4rem;
+    text-align: center;
+}

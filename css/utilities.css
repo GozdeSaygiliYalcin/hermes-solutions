@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #3ccf4e;
+    --secondary-color: #e2dcc8;
+    --dark-color: #3f4e4f;
+    --light-color: #f1f1f1;
+    --icon-color: ;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.btn:hover {
+    opacity: 0.92;
+}
+
+.btn-primary,
+.bg-primary {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+}
+
+.btn-secondary,
+.bg-secondary {
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+.btn-dark,
+.bg-secondary {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+.btn-light,
+.bg-secondary {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--light-color);
+}
+
+
+/* flex-items*/
+
+.flex-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-items-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
